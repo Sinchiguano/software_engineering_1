@@ -52,3 +52,16 @@ def compute_distance_between_2_points(x_0,y_0,x_1,y_1):
 
 
 print(compute_distance_between_2_points(x_0,y_0,x_1,y_1))
+
+
+value1=True
+value2=False
+print(value1,value2)
+print('')
+
+
+print(not value1)
+print(value1 and value2)
+print(value1 or value2)
+
+

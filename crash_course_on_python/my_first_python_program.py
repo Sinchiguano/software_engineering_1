@@ -19,4 +19,4 @@ print(temperature, bakers_dozen)
 print('CELSIUS:',(temperature-32)*5/9)
 print('FAHRENHEIT>',float(temperature))
 
-print(str(3)+'hi')
+print(str(3))
