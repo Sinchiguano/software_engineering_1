@@ -1,0 +1,8 @@
+\babel@toc {english}{}
+\beamer@sectionintoc {1}{Perfil del docente}{3}{0}{1}
+\beamer@sectionintoc {2}{Consideraciones generales}{4}{0}{2}
+\beamer@sectionintoc {3}{ Sílabo}{5}{0}{3}
+\beamer@sectionintoc {4}{Magnitudes y unidades eléctricas}{5}{0}{4}
+\beamer@sectionintoc {5}{Circuitos eléctricos}{6}{0}{5}
+\beamer@sectionintoc {6}{Tipos de circuitos}{7}{0}{6}
+\beamer@sectionintoc {7}{Circuitos electrónicos}{8}{0}{7}

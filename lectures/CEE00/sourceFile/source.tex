@@ -1,0 +1,79 @@
+%-------- theme --------
+\usetheme{Madrid}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%-------- color --------
+\definecolor{crimsonred}{RGB}{0,200,0} % Official RGB code for ULEAM Red
+\usecolortheme[named=crimsonred]{structure}
+%-------- set color of 'example block' to crimson theme --------
+\setbeamercolor{block body example}{bg=white}
+\setbeamercolor{block title example}{fg=white, bg=red!50!black}
+
+%-------- font --------
+\setbeamerfont{structure}{family=\rmfamily,series=\bfseries}
+\usefonttheme[stillsansseriftext]{structurebold}
+\setbeamerfont{section in head/foot}{size=\tiny}
+
+%-------- misc structure --------
+\useoutertheme[footline=authortitle,subsection=false]{miniframes}
+\useinnertheme{rounded}
+\addtobeamertemplate{block begin}{}{\justifying}
+\newtheorem{remark}[theorem]{Remark}
+\renewcommand{\indent}{\hspace*{2em}}
+\setbeamertemplate{theorems}[numbered]
+\setbeamertemplate{caption}[numbered]
+\usepackage[justification=centering]{caption}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+%-------- packages to be used -------
+\usepackage{amsmath,amsfonts,amssymb,amscd,amsthm}
+\usepackage{graphicx,xcolor,comment}
+\usepackage{mathrsfs} 
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{caption}
+\usepackage[english]{babel}
+\usepackage{rotating}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{bm}
+\usepackage{csquotes}
+
+
+
+
+%-------- for bibliography -----------------
+%\usepackage{biblatex}
+%\setbeamertemplate{bibliography item}{\insertbiblabel}
+%\addbibresource{References.bib}
+%\setbeamertemplate{frametitle continuation}{\frametitle{\color{white}List of References}}
+
+%-------- WMSU Backgound -------------------
+\usebackgroundtemplate{%
+	\tikz[overlay,remember picture] \node[opacity=0.04, at=(current page.center)] {
+		\includegraphics[height=3.5 in,width=3.5 in]{./Figures/uleam.png}};
+}
+
+
+
+
+%---------START EDITING HERE---------------------
+\title[CIRCUITOS ELÉCTRICOS Y ELECTRÓNICOS]{CIRCUITOS ELÉCTRICOS Y ELECTRÓNICOS}
+
+\author [CÉSAR SINCHIGUANO - 2022-1]{\textbf{ING. CÉSAR SINCHIGUANO, MSC}}
+\institute[ULEAM EXT EL CARMEN] {\emph{ }\textbf{}
+\\[1em]
+	CIRCUITOS ELÉCTRICOS Y ELECTRÓNICOS\\TECNOLOGIA SUPERIOR EN ELECTROMECANICA\\ULEAM\\[1em]
+\includegraphics[scale=0.2]{./Figures/uleam.png}}
+
+
+\date[]{\footnotesize \textbf{Junio 18, 2022}}
+
+
+
+
+
+
