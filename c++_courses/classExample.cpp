@@ -1,23 +1,15 @@
-#include<iostream>
+
+#include"classExample.h"
+#include <iostream>
 
 
-class exampleClass{
-    public:
-        void coolSaying(){
-            std::cout<<"Hello from a class"<<std::endl;
-        }
 
-    private:
-
-};
+//::binary scope resolotion operator
+//this function classExample() is a member of the class classExample
 
 
-int main()
+//constructor, it will run automatically
+classExample::classExample()
 {
-    exampleClass exampleObject;
-    exampleObject.coolSaying();
-
-
-
-    return 0;
-}
+	std::cout<<"I am Cesar Sinchiguano"<<std::endl;
+};
