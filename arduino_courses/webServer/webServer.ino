@@ -64,13 +64,8 @@ void setup()
 
 
 void loop() {
-  server.handleClient();
-  if(LED1status)
-  {digitalWrite(LED1pin, HIGH);}
-  else
-  {digitalWrite(LED1pin, LOW);}
 
-  Serial.println("i am inside the loop");
+
 }
 
 
@@ -91,7 +86,7 @@ void handle_NotFound(){
 server.send(404, "text/plain", "Not found");
 }
 
-String SendHTML(uint8_t led1stat,uint8_t led2stat,uint8_t led3stat,uint8_t led4stat){
+String SendHTML(uint8_t led1stat){
   String ptr = "<!DOCTYPE html> <html>\n";
 
 
