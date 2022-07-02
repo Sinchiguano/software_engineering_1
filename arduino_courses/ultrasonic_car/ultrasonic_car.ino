@@ -8,8 +8,8 @@
 //ultrasonic variables
 long timePulse;
 int distance;
-const int trig_Pin=2;
-const int echo_Pin=3;
+const int trig_Pin=3;
+const int echo_Pin=2;
 //motor variable
 int in1=4;//motor1
 int in2=5;//motor1
@@ -75,6 +75,12 @@ Serial.println(" cm");
     digitalWrite(in2,HIGH);
     digitalWrite(in3,LOW);
     digitalWrite(in4,HIGH);
+    delay(250);
+    digitalWrite(in1,LOW);
+    digitalWrite(in2,HIGH);
+    digitalWrite(in3,LOW);
+    digitalWrite(in4,HIGH);
+    delay(500);
 
     //STOP MOTORS
     digitalWrite(in1,LOW);
