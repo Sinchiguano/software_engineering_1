@@ -7,7 +7,6 @@ const char* ssid = "robotica"; //Enter Wi-Fi SSID
 const char* password =  "robotica"; //Enter Wi-Fi Password
 
 
-
 int led1Pin = D10;
 int led2Pin = D11;
 
