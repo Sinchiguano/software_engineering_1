@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
 	printf("Enter the regular price: \n");
 	scanf("%f", &regular);
 	printf("Enter the percent off: \n");
-	scanf("%f", &percentOff);
+	scanf("%d", &percentOff);
 
 	printf("Floating-Point Number is : %f \n",regular);
 
@@ -25,6 +25,8 @@ int main(int argc, char const *argv[])
 	float saleNew=saleNewFunction(regular);
 
 	printf("Sale newPrice: %.2f \n",saleNew);
+	printf("I am Cesa Sinchiguano\n");
+
 
 
 	return 0;
