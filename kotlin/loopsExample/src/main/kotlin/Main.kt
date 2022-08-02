@@ -18,6 +18,22 @@ fun main(args: Array<String>) {
 
     for (i in 10 downTo 1) println(i)
 
+    val namesVariable= arrayOf("ULEAM","EPN","CVUT")
+    for (index in namesVariable.indices)
+    {
+        println("Index: $index Element: ${namesVariable[index]}")
+    }
+
+    println("##################################")
+    val aVariable=false
+    val bVariable=true
+
+
+    println("$aVariable")
+    println("${2>3}")
+    println("${2==3}")
+    println("${!(2==3)}")
+    println("We are here: ${true||false }")
 
 
 }
