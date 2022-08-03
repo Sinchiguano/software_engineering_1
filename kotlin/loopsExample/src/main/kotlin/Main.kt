@@ -35,5 +35,31 @@ fun main(args: Array<String>) {
     println("${!(2==3)}")
     println("We are here: ${true||false }")
 
+    var i =0;
+
+while (i<=9)
+    {
+        println(i)
+        println("$i")
+        i+=1
+        break
+
+    }
+
+
+
+for (i in 1..10)
+{
+    if (i>3&&i<8)
+    {
+        println("we found number $i")
+        continue
+    }
+    println("$i")
+}
+
+
+
+
 
 }
