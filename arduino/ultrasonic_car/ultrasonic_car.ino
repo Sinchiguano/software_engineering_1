@@ -76,11 +76,7 @@ Serial.println(" cm");
     digitalWrite(in3,LOW);
     digitalWrite(in4,HIGH);
     delay(250);
-    digitalWrite(in1,LOW);
-    digitalWrite(in2,HIGH);
-    digitalWrite(in3,LOW);
-    digitalWrite(in4,HIGH);
-    delay(500);
+
 
     //STOP MOTORS
     digitalWrite(in1,LOW);
