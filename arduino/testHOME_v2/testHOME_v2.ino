@@ -24,8 +24,12 @@
 /********************/
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "Hostal_Guayaquil_3";
-char pass[] = "16081987";
+//char ssid[] = "Hostal_Guayaquil_3";
+//char pass[] = "16081987";
+
+char ssid[] = ".:Wifi-Uleam:.";
+char pass[] = "U13aM.2022";
+
 char auth[] = BLYNK_AUTH_TOKEN;
 #define GPIO_D15 15
 #define GPIO_D2 2
