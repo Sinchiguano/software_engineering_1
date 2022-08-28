@@ -29,8 +29,12 @@
 //char ssid[] = "Hostal_Guayaquil_3";
 //char pass[] = "16081987";
 
-char ssid[] = ".:Wifi-Uleam:.";
-char pass[] = "U13aM.2022";
+//char ssid[] = ".:Wifi-Uleam:.";
+//char pass[] = "U13aM.2022";
+
+// Your WiFi credentials.
+char ssid[] = "MIKROTIK";
+char pass[] = "saori2021";
 
 char auth[] = BLYNK_AUTH_TOKEN;
 #define GPIO_D15 15
@@ -133,13 +137,6 @@ BLYNK_WRITE(V4)
   }
 }
 
-void CHECKPIN() {
-  // Invert state, since button is "Active LOW"
-  pinValue = !digitalRead(GPIO_D22);
-
-  // Mark pin value changed
-  pinChanged = true;
-}
 
 void setup()
 {
@@ -149,10 +146,6 @@ void setup()
   pinMode(GPIO_D5,OUTPUT);
   pinMode(GPIO_D18,OUTPUT);
 
-  pinMode(GPIO_D22,INPUT_PULLUP);
-  //pinMode(GPIO_D23,INPUT_PULLUP);
-  attachInterrupt(GPIO_D22, CHECKPIN, CHANGE);
-  //attachInterrupt(GPIO_D23, ISR_D23, FALLING);
 
   // Debug console
   Serial.begin(115200);
@@ -162,22 +155,6 @@ void setup()
 void loop()
 {
   Blynk.run();
-
-  if (pinChanged)
-  {
-      // Process the value
-      if (pinValue)
-      {
-        digitalWrite(GPIO_D15,HIGH);
-      } else
-      {
-        digitalWrite(GPIO_D15,LOW);
-      }
-
-    // Clear the mark, as we have processed the value
-    pinChanged = false;
-    }
-
 
 }
 
