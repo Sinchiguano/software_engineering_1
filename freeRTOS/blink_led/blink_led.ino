@@ -17,10 +17,10 @@ static const int GPIO_18=18;
 
 
 
-static const int rate15=150;
-static const int rate2=200;
-static const int rate5=250;
-static const int rate4=300;
+static const int rate15=125;
+static const int rate2=175;
+static const int rate5=225;
+static const int rate4=275;
 
 
 
