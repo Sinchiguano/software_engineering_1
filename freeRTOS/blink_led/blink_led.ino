@@ -23,7 +23,6 @@ static const int rate5=225;
 static const int rate4=275;
 
 
-
 // our task:  blink an led
 void toggleGPIO15(void *parameter)
 {
