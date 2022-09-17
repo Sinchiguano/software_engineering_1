@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .font1 {font-family: sans-serif;}
+    </style>
+</head>
+
+
+
+<body>
+    <p>This is the default serif font. It is commonly used in 
+    printed media for better readability, since letters
+    are more distinct in serif fonts.</p>
+
+    <p class="font1">This is a sans-serif font. 
+    It is commonly used in screens because it is hard
+    for screens to render letters with such great detail.</p>
+
+
+
+    <hr>
+        <p id="serif-text">This is the default serif font. It is commonly used in 
+    printed media for better readability, since letters
+    are more distinct in serif fonts.</p>
+
+    <p class="nice" id="sans-serif-text">This is a sans-serif font. 
+    It is commonly used in screens because it is hard
+    for screens to render letters with such great detail.</p>
+
+    <script>
+        var sansSerifText = document.getElementById("sans-serif-text");
+        sansSerifText.style.fontFamily = "sans-serif";
+    </script>
+
+
+    <hr>
+
+</body>

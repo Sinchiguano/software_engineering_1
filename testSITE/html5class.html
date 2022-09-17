@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .nice {
+        font-family: sans-serif;
+    }
+    </style>
+</head>
+
+
+<style>
+p#last {
+    color: red;    
+}
+p.example {
+    color: green;
+}
+p {
+    color: green}
+</style>
+
+
+
+<style>
+h1, h2, h3 {
+    color: blue;
+}
+
+h4, h5, h6 {
+    color: red;
+}
+
+strong {
+    color: blue;    
+}
+</style>
+
+<body>
+    <p id="mytext">My text</p>
+
+
+
+    <p>I am blue</p>
+    <p class="example">I am also blue</p>
+    <p id="last" class="example">I am blue as well</p>
+
+<hr>
+
+<h1>h1 title</h1>
+<h2>h2 title</h2>
+<h3>h3 title</h3>
+<h4>h4 title</h4>
+<h5>h5 title</h5>
+<h6>h6 title</h6>
+
+<hr>
+
+
+<p>This is the <strong>first</strong> sentence.</p>
+<p class="strongblue">This is the <strong>second</strong> sentence.</p>
+<hr>
+
+<p class="nice">This is a nice paragraph.</p>
+<p class="nice">This is another nice paragraph.</p>
+<p>This is a standard paragraph.</p>
+
+<script>
+    // this code colors the first nice paragraph in blue
+    var firstNiceParagraph = document.querySelector(".nice");
+    firstNiceParagraph.style.color = "blue";
+</script>
+
+
+</body>
+</html>
