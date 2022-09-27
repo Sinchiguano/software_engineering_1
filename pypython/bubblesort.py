@@ -28,3 +28,4 @@ import datetime
 
 date1=datetime.date(2016,1,7)
 print(date1,date1.year,date1.month)
+
