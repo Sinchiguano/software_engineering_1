@@ -3,7 +3,7 @@ git status
 git add fileName
 or git add .
 git commit -m "new codes"
-git push https://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@github.com/Sinchiguano/software_engineering_1.git
+git push https://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@github.com/Sinchiguano/software_engineering_1.git
 
 
 
