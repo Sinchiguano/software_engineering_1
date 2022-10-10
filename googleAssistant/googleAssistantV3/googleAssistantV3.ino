@@ -36,11 +36,11 @@ static const int buzzer=18;
 //#define WLAN_PASS       "saori2021"
 
 
-// #define WLAN_SSID       "airobotia"
-// #define WLAN_PASS       "airobotia"
+#define WLAN_SSID       "airobotia"
+#define WLAN_PASS       "airobotia"
 
-#define WLAN_SSID       ".:Uleam-Funcionarios:."
-#define WLAN_PASS       "U134M-FD22"
+//#define WLAN_SSID       ".:Uleam-Funcionarios:."
+//#define WLAN_PASS       "U134M-FD22"
 
 /************************* Adafruit.io Setup *********************************/
 
