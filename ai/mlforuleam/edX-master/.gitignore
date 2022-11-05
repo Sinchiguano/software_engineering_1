@@ -1,0 +1,8 @@
+*.sqlite
+*.zip
+*.csv
+*.txt
+*.png
+world-development-indicators
+.ipynb_checkpoints
+*.pkl

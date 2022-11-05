@@ -1,0 +1,196 @@
+<h2 id="setup">Setup</h2>
+
+<p>
+  To participate in a Software Carpentry workshop, you will need
+  access to the software described below. In addition, you will
+  need an up-to-date web browser.
+</p>
+<p>
+  We maintain a list of common issues that occur during installation as a reference for instructors
+  that may be useful on the
+  <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions/">Configuration Problems and Solutions wiki page</a>.
+</p>
+
+<div id="shell"> <!-- Start of 'shell' section. -->
+  <h3>The Bash Shell</h3>
+
+  <p>
+    Bash is a commonly-used shell that gives you the power to do simple
+    tasks more quickly.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="shell-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=339AEqk9c-8">Video Tutorial</a>
+      <ol>
+        <li>Download the Git for Windows <a href="https://git-for-windows.github.io/">installer</a>.</li>
+        <li>Run the installer and follow the steps bellow:
+          <ol>
+            <!-- Git 2.8.2 Setup -->
+            <!-- Information -->
+            <li>Click on "Next".</li>
+            <!-- Select Components -->
+            <li>Click on "Next".</li>
+            <!-- Adjusting your PATH environment -->
+            <li>
+              <strong>
+                Keep "Use Git from the Windows Command Prompt" selected and click on "Next".
+              </strong>
+                If you forgot to do this programs that you need for the workshop will not work properly.
+                If this happens rerun the installer and select the appropriate option.
+            </li>
+            <!-- Choosing the SSH executable -->
+            <li>Click on "Next".</li>
+            <!-- Configuring the line ending conversions -->
+            <li>
+              <strong>
+                Keep "Checkout Windows-style, commit Unix-style line endings" selected and click on "Next".
+              </strong>
+            </li>
+            <!-- Configuring the terminal emulator to use with Git Bash -->
+            <li>
+              <strong>
+                Keep "Use Windows' default console window" selected and click on "Next".
+              </strong>
+            </li>
+            <!-- Configuring experimental performance tweaks -->
+            <li>Click on "Install".</li>
+            <!-- Installing -->
+            <!-- Completing the Git Setup Wizard -->
+            <li>Click on "Finish".</li>
+          </ol>
+        </li>
+        <li>
+          If your "HOME" environment variable is not set (or you don't know what this is):
+          <ol>
+            <li>Open command prompt (Open Start Menu then type <code>cmd</code> and press [Enter])</li>
+            <li>
+              Type the following line into the command prompt window exactly as shown:
+              <p><code>setx HOME "%USERPROFILE%"</code></p>
+            </li>
+            <li>Press [Enter], you should see <code>SUCCESS: Specified value was saved.</code></li>
+            <li>Quit command prompt by typing <code>exit</code> then pressing [Enter]</li>
+          </ol>
+        </li>
+      </ol>
+      <p>This will provide you with both Git and Bash in the Git Bash program.</p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-macosx">Mac OS X</h4>
+      <p>
+        The default shell in all versions of Mac OS X is Bash, so no
+        need to install anything.  You access Bash from the Terminal
+        (found in
+        <code>/Applications/Utilities</code>).
+        See the Git installation <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">video tutorial</a>
+        for an example on how to open the Terminal.
+        You may want to keep
+        Terminal in your dock for this workshop.
+      </p>
+    </div>
+    <div class="col-md-4">
+      <h4 id="shell-linux">Linux</h4>
+      <p>
+        The default shell is usually Bash, but if your
+        machine is set up differently you can run it by opening a
+        terminal and typing <code>bash</code>.  There is no need to
+        install anything.
+      </p>
+    </div>
+  </div>
+</div> <!-- End of 'shell' section. -->
+
+<div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
+           the workshop will teach Python using something other than
+           the IPython notebook.
+           Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
+  <h3>Python</h3>
+
+  <p>
+    <a href="http://python.org">Python</a> is a popular language for
+    research computing, and great for general-purpose programming as
+    well.  Installing all of its research packages individually can be
+    a bit difficult, so we recommend
+    <a href="https://www.continuum.io/anaconda">Anaconda</a>,
+    an all-in-one installer.
+  </p>
+
+    <p>
+      Regardless of how you choose to install it,
+      <strong>please make sure you install Python version 3.x</strong>
+      (e.g., 3.4 is fine).
+    </p>
+
+    <p>
+      We will teach Python using the Jupyter notebook, a programming environment
+      that runs in a web browser. For this to work you will need a reasonably
+      up-to-date browser. The current versions of the Chrome, Safari and
+      Firefox browsers are all
+      <a href="http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility">supported</a>
+      (some older browsers, including Internet Explorer version 9
+      and below, are not).
+    </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h4 id="python-windows">Windows</h4>
+      <a href="https://www.youtube.com/watch?v=xxQ0mzZ8UvA">Video Tutorial</a>
+      <ol>
+        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
+        <li>Download the Python 3 installer for Windows.</li>
+        <li>Install Python 3 using all of the defaults for installation <em>except</em> make sure to check <strong>Make Anaconda the default Python</strong>.</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="python-macosx">Mac OS X</h4>
+      <a href="https://www.youtube.com/watch?v=TcSAln46u9U">Video Tutorial</a>
+      <ol>
+        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
+        <li>Download the Python 3 installer for OS X.</li>
+        <li>Install Python 3 using all of the defaults for installation.</li>
+      </ol>
+    </div>
+    <div class="col-md-4">
+      <h4 id="python-linux">Linux</h4>
+      <ol>
+        <li>Open <a href="http://continuum.io/downloads">http://continuum.io/downloads</a> with your web browser.</li>
+        <li>Download the Python 3 installer for Linux.<br>
+          (Installation requires using the shell. If you aren't
+           comfortable doing the installation yourself
+           stop here and request help at the workshop.)
+        </li>
+        <li>
+          Open a terminal window.
+        </li>
+        <li>
+          Type <pre>bash Anaconda3-</pre> and then press
+          tab. The name of the file you just downloaded should
+          appear. If it does not, navigate to the folder where you
+          downloaded the file, for example with:
+          <pre>cd Downloads</pre>
+          Then, try again.
+        </li>
+        <li>
+          Press enter. You will follow the text-only prompts. To move through
+          the text, press the space key. Type <code>yes</code> and
+          press enter to approve the license. Press enter to approve the
+          default location for the files. Type <code>yes</code> and
+          press enter to prepend Anaconda to your <code>PATH</code>
+          (this makes the Anaconda distribution the default Python).
+        </li>
+        <li>
+          Close the terminal window.
+      </ol>
+    </div>
+  </div>
+<!--
+  <p>
+  Once you are done installing the software listed above,
+  please go to <a href="setup/index.html">this page</a>,
+  which has instructions on how to test that everything was installed correctly.
+  </p>
+-->
+</div> <!-- End of 'Python' section. -->
+
+<p>Installation instructions licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution license</a> were adapted from <a href="https://github.com/swcarpentry/workshop-template">Software Carpentry</a></p>

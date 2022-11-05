@@ -1,0 +1,20 @@
+[NbGraderApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NbGraderApp | ERROR] No command given (run with --help for options)
+[QuickStartApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[QuickStartApp | INFO] Creating directory '/home/jovyan/work/edX/Exercise Notebooks/test1'...
+[QuickStartApp | INFO] Copying example from the user guide...
+[QuickStartApp | INFO] Generating example config file...
+[QuickStartApp | INFO] Done! The course files are located in '/home/jovyan/work/edX/Exercise Notebooks/test1'.
+    
+    To get started, you can edit the source notebooks located in:
+    
+        /home/jovyan/work/edX/Exercise Notebooks/test1/source/ps1
+    
+    Once you have edited them to your satisfaction, you can create
+    the student version by running `nbgrader assign ps1` from the
+    '/home/jovyan/work/edX/Exercise Notebooks/test1' directory.
+    
+    For further details, please see the full nbgrader documentation at:
+    
+        https://nbgrader.readthedocs.io/
+    

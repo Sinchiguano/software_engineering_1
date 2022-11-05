@@ -1,0 +1,123 @@
+[NbGraderApp | INFO] New config file saved to 'nbgrader_config.py'
+[AssignApp | ERROR] No assignment called 'test' exists in the database
+[DbApp | ERROR] No db command given (run with --help for options)
+[NbGraderApp | ERROR] No command given (run with --help for options)
+[NbGraderApp | ERROR] No command given (run with --help for options)
+[AssignApp | INFO] Copying /home/jovyan/work/edX/Exercise Notebooks/test1/source/./ps1/jupyter.png -> /home/jovyan/work/edX/Exercise Notebooks/test1/release/./ps1/jupyter.png
+[AssignApp | INFO] Updating/creating assignment 'ps1': {}
+[AssignApp | INFO] Converting notebook /home/jovyan/work/edX/Exercise Notebooks/test1/source/./ps1/problem1.ipynb to notebook
+[AssignApp | INFO] Writing 7452 bytes to /home/jovyan/work/edX/Exercise Notebooks/test1/release/./ps1/problem1.ipynb
+[AssignApp | INFO] Converting notebook /home/jovyan/work/edX/Exercise Notebooks/test1/source/./ps1/problem2.ipynb to notebook
+[AssignApp | INFO] Writing 1443 bytes to /home/jovyan/work/edX/Exercise Notebooks/test1/release/./ps1/problem2.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[DbApp | ERROR] No db command given (run with --help for options)
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'test': {'duedate': None}
+[AssignApp | ERROR] No notebooks were matched by '/home/jovyan/work/edX/Exercise Notebooks/test1/source/./ps1pwd'
+[NbGraderApp | ERROR] No command given (run with --help for options)
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'numpy': {'duedate': None}
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./numpy/numpy Exercise Notebook.ipynb to notebook
+[AssignApp | INFO] Writing 5026 bytes to /data/home/a1singh/edX/Exercise Notebooks/test1/release/./numpy/numpy Exercise Notebook.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[AssignApp | INFO] Skipping existing assignment: /data/home/a1singh/edX/Exercise Notebooks/test1/release/numpy
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./numpy/numpy Exercise Notebook.ipynb to notebook
+[AssignApp | INFO] Writing 5026 bytes to /data/home/a1singh/edX/Exercise Notebooks/test1/release/./numpy/numpy Exercise Notebook.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./numpy/numpy Exercise Notebook.ipynb to notebook
+[AssignApp | ERROR] There was an error processing assignment: /data/home/a1singh/edX/Exercise Notebooks/test1/source/./numpy
+[AssignApp | ERROR] Traceback (most recent call last):
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbgrader/apps/baseapp.py", line 825, in convert_notebooks
+        super(BaseNbConvertApp, self).convert_notebooks()
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 473, in convert_notebooks
+        self.convert_single_notebook(notebook_filename)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 444, in convert_single_notebook
+        output, resources = self.export_single_notebook(notebook_filename, resources, input_buffer=input_buffer)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 373, in export_single_notebook
+        output, resources = self.exporter.from_filename(notebook_filename, resources=resources)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 171, in from_filename
+        return self.from_file(f, resources=resources, **kw)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 189, in from_file
+        return self.from_notebook_node(nbformat.read(file_stream, as_version=4), resources=resources, **kw)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/exporters/notebook.py", line 31, in from_notebook_node
+        nb_copy, resources = super(NotebookExporter, self).from_notebook_node(nb, resources, **kw)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 131, in from_notebook_node
+        nb_copy, resources = self._preprocess(nb_copy, resources)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 308, in _preprocess
+        nbc, resc = preprocessor(nbc, resc)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/preprocessors/base.py", line 47, in __call__
+        return self.preprocess(nb,resources)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbgrader/preprocessors/clearsolutions.py", line 130, in preprocess
+        nb, resources = super(ClearSolutions, self).preprocess(nb, resources)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/preprocessors/base.py", line 70, in preprocess
+        nb.cells[index], resources = self.preprocess_cell(cell, resources, index)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbgrader/preprocessors/clearsolutions.py", line 149, in preprocess_cell
+        "Solution region detected in a non-solution cell; please make sure "
+    RuntimeError: Solution region detected in a non-solution cell; please make sure all solution regions are within solution cells.
+    
+[AssignApp | ERROR] There was an error processing assignment 'numpy' for student '.'
+[AssignApp | ERROR] Please see the error log (.nbgrader.log) for details on the specific errors on the above failures.
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./numpy/numpy Exercise Notebook.ipynb to notebook
+[AssignApp | INFO] Writing 5242 bytes to /data/home/a1singh/edX/Exercise Notebooks/test1/release/./numpy/numpy Exercise Notebook.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./numpy/numpy Exercise Notebook.ipynb to notebook
+[AssignApp | ERROR] Traceback (most recent call last):
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbgrader/preprocessors/checkcellmetadata.py", line 11, in preprocess
+        Validator().validate_nb(nb)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbgrader/nbformat/v1.py", line 115, in validate_nb
+        raise ValidationError("Duplicate grade id: {}".format(grade_id))
+    jsonschema.exceptions.ValidationError: Duplicate grade id: 445
+    
+[AssignApp | ERROR] Notebook failed to validate. Please update the metadata with `nbgrader update`.
+[AssignApp | ERROR] There was an error processing assignment: /data/home/a1singh/edX/Exercise Notebooks/test1/source/./numpy
+[AssignApp | ERROR] Traceback (most recent call last):
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbgrader/apps/baseapp.py", line 825, in convert_notebooks
+        super(BaseNbConvertApp, self).convert_notebooks()
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 473, in convert_notebooks
+        self.convert_single_notebook(notebook_filename)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 444, in convert_single_notebook
+        output, resources = self.export_single_notebook(notebook_filename, resources, input_buffer=input_buffer)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/nbconvertapp.py", line 373, in export_single_notebook
+        output, resources = self.exporter.from_filename(notebook_filename, resources=resources)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 171, in from_filename
+        return self.from_file(f, resources=resources, **kw)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 189, in from_file
+        return self.from_notebook_node(nbformat.read(file_stream, as_version=4), resources=resources, **kw)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/exporters/notebook.py", line 31, in from_notebook_node
+        nb_copy, resources = super(NotebookExporter, self).from_notebook_node(nb, resources, **kw)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 131, in from_notebook_node
+        nb_copy, resources = self._preprocess(nb_copy, resources)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/exporters/exporter.py", line 308, in _preprocess
+        nbc, resc = preprocessor(nbc, resc)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbconvert/preprocessors/base.py", line 47, in __call__
+        return self.preprocess(nb,resources)
+      File "/data/home/a1singh/anaconda3/lib/python3.6/site-packages/nbgrader/preprocessors/checkcellmetadata.py", line 16, in preprocess
+        raise ValidationError(msg)
+    jsonschema.exceptions.ValidationError: Notebook failed to validate. Please update the metadata with `nbgrader update`.
+    
+[AssignApp | ERROR] There was an error processing assignment 'numpy' for student '.'
+[AssignApp | ERROR] Please see the error log (.nbgrader.log) for details on the specific errors on the above failures.
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./numpy/numpy Exercise Notebook.ipynb to notebook
+[AssignApp | INFO] Writing 17671 bytes to /data/home/a1singh/edX/Exercise Notebooks/test1/release/./numpy/numpy Exercise Notebook.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./numpy/numpy Exercise Notebook.ipynb to notebook
+[AssignApp | INFO] Writing 19539 bytes to /data/home/a1singh/edX/Exercise Notebooks/test1/release/./numpy/numpy Exercise Notebook.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'classification': {'duedate': None}
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./classification/classification Exercise Notebook.ipynb to notebook
+[AssignApp | INFO] Writing 12615 bytes to /data/home/a1singh/edX/Exercise Notebooks/test1/release/./classification/classification Exercise Notebook.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'regression': {'duedate': None}
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./regression/regression Exercise Notebook.ipynb to notebook
+[AssignApp | INFO] Writing 11342 bytes to /data/home/a1singh/edX/Exercise Notebooks/test1/release/./regression/regression Exercise Notebook.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'clustering': {'duedate': None}
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./clustering/clustering Exercise Notebook.ipynb to notebook
+[AssignApp | INFO] Writing 12478 bytes to /data/home/a1singh/edX/Exercise Notebooks/test1/release/./clustering/clustering Exercise Notebook.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[AssignApp | INFO] Skipping existing assignment: /data/home/a1singh/edX/Exercise Notebooks/test1/release/classification
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./classification/classification Exercise Notebook.ipynb to notebook
+[AssignApp | INFO] Writing 12689 bytes to /data/home/a1singh/edX/Exercise Notebooks/test1/release/./classification/classification Exercise Notebook.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
+[DbAssignmentAddApp | INFO] Creating/updating assignment with ID 'matplotlib': {'duedate': None}
+[AssignApp | INFO] Converting notebook /data/home/a1singh/edX/Exercise Notebooks/test1/source/./matplotlib/matplotlib Exercise Notebook.ipynb to notebook
+[AssignApp | INFO] Writing 9179 bytes to /data/home/a1singh/edX/Exercise Notebooks/test1/release/./matplotlib/matplotlib Exercise Notebook.ipynb
+[AssignApp | INFO] Setting destination file permissions to 644
