@@ -41,3 +41,7 @@ sudo chmod a+rw /dev/ttyACM0
 
 //download videos
 youtube-dl -x --audio-format mp3 url........
+
+//code keyboard
+ctrl + k + c  comment
+ctrl + k + u
