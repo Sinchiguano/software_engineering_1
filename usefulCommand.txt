@@ -6,26 +6,12 @@ git commit -m "new codes"
 git push https://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@github.com/Sinchiguano/software_engineering_1.git
 
 
-
-
-javac name.java
-java nameClass
-
-
 condaon
 conda activate python36
 conda deactivate 
 conda deactivate
 
 
-
-
-gedit ~/.bashrc
-
-
-
-g++ sumeExample.cpp -o demo5
-./demo5
 
 FOR C PROGRAM
 //gcc -o my_program my_program.c
@@ -45,3 +31,30 @@ youtube-dl -x --audio-format mp3 url........
 //code keyboard
 ctrl + k + c  comment
 ctrl + k + u
+//Install package in anaconda
+conda install scipy
+
+//install opencv in anaconda
+//first install pip in anaconda
+Sudo apt-get update
+Sudo apt-get upgrade
+pip install opencv-python
+pip install opencv-python
+
+
+//USEFUL INFORMATION FOR LINUX
+gedit ~/.bashrc
+
+
+
+//HOW TO COMPILE C++
+
+
+g++ sumeExample.cpp -o demo5
+./demo5
+
+
+
+//HOW TO RUN JAVA
+javac name.java
+java nameClass
