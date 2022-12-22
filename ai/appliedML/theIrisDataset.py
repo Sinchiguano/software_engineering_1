@@ -154,49 +154,52 @@ print('///////////////////////////// PERFORMING CLASSIFICATION  ////////////////
 X=iris.drop(['target','species'],axis=1)
 X=X.to_numpy()[:,2:]#take all the row and column 2 and 3
 y=iris['target']
+print('TARGET')
+print(y.shape)
+print(type(y))
 
-
+print('////////////////////////////////')
 
 from sklearn.model_selection import train_test_split
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.5,random_state=42)
 
+print(y_train.shape)
+print(y_train)
+
+# from sklearn.linear_model import LogisticRegression
+# model=LogisticRegression()
+# model.fit(X_train,y_train)
 
 
 
-from sklearn.linear_model import LogisticRegression
-model=LogisticRegression()
-model.fit(X_train,y_train)
+
+# print('Training predictions')
+# predicTraining=model.predict(X_train)
+# print(predicTraining)
+
+# print('Testing predictions')
+# predicTesting=model.predict(X_test)
+# print(predicTesting)
+
+# print('**************************************************')
+# #FOR CLASSIFICATION PROBLEMS THREE MEAIN MEASUREMENTS
+# #PRECISION
+# #RECALL
+# #CONFUSION MATRIX
+
+# # from sklearn import metrics
+# # print(metrics.classification_report(y_train,predicTraining,digits=3))
+# # print('Confusion matrix')
+# # print(metrics.confusion_matrix(y_train,predicTraining))
+
+
+# # print('**************************************************')
+# # from sklearn import metrics
+# # print(metrics.classification_report(y_test,predicTesting,digits=3))
+# # print('Confusion matrix')
+# # print(metrics.confusion_matrix(y_test,predicTesting))
 
 
 
-
-print('Training predictions')
-predicTraining=model.predict(X_train)
-print(predicTraining)
-
-print('Testing predictions')
-predicTesting=model.predict(X_test)
-print(predicTesting)
-
-print('**************************************************')
-#FOR CLASSIFICATION PROBLEMS THREE MEAIN MEASUREMENTS
-#PRECISION
-#RECALL
-#CONFUSION MATRIX
-
-# from sklearn import metrics
-# print(metrics.classification_report(y_train,predicTraining,digits=3))
-# print('Confusion matrix')
-# print(metrics.confusion_matrix(y_train,predicTraining))
-
-
-print('**************************************************')
-from sklearn import metrics
-print(metrics.classification_report(y_test,predicTesting,digits=3))
-print('Confusion matrix')
-print(metrics.confusion_matrix(y_test,predicTesting))
-
-
-
-#https://www.pycodemates.com/2022/05/iris-dataset-classification-with-python.html
+# # #https://www.pycodemates.com/2022/05/iris-dataset-classification-with-python.html
 
